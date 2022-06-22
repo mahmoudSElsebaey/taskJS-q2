@@ -22,6 +22,6 @@ allProducts.forEach(function (item) {
 });
 
 btn.onclick = function () {
-    document.querySelector(".numbersOfProducts").textContent = "Number of products that you choosed is " +( i-1) + " products"
+    document.querySelector(".numbersOfProducts").textContent = "Number of products that you choosed are " +( i-1) + " products"
     document.querySelector(".totalPrice").textContent =" Total Price is " + totalPrice + " EGP" 
 }

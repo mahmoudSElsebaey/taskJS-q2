@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: fantasy;
+}
+
+.container {
+    width: 90%;
+    margin: 50px auto;
+    /* border: 1px solid red; */
+}
+
+.title {
+    background-color: #fee2cc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    color: rgb(62, 60, 60);
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.products .product-parent {
+    width: 230px;
+    font-size: 15px;
+    padding: 10px;
+    transition: .3s;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+
+.products .product-parent:hover {
+    box-shadow: 2px 2px 10px 0px rgba(109, 107, 107, 0.439);
+    transform: scale(1.01);
+}
+
+.offer-precent {
+    background-color: #fee2cc;
+    padding: 5px;
+    margin-left: 75%;
+    display: inline-block;
+    position: absolute;
+}
+
+.offer-info {
+    line-height: 1.5;
+}
+
+.past-price {
+    color: rgb(128, 129, 129);
+}
+
+.offer-btn {
+    background-color: #f68b1e;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 10px auto 0px;
+    display: block;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.product-parent:hover .offer-btn {
+    visibility: visible;
+    transition: .3s;
+}
+
+.products-choosed {
+    background-color: #fee2cc;
+    line-height: 30px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(62, 60, 60);
+    display: inline-block;
+
+}
+
+.add-to-cart-btn {
+    background-color: #f68b1e;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 10px auto 0px;
+    display: none;
+    cursor: pointer;
+}
+
+.totalPrice, .numbersOfProducts {
+    color: #6d3802;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 900;
+}
